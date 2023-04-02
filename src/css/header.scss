@@ -1,0 +1,121 @@
+.header{
+  &__top{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-list{
+      display: flex;
+      column-gap: 7px;
+    }
+    &-link{
+      i{
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;
+        background: #443676;
+        transition: background 0.2s, color 0.2s;
+        &:hover{
+          background: #a39ac7;
+        }
+      }
+    }
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    i {
+      color: $blue;
+      font-size: 18px;
+    }
+    &-text{
+      p{
+        color: #7e7e7e;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+      }
+      a{
+        color: #666;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+  }
+  &__nav{
+    background-color: $blue;
+  }
+  &__list{
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__link{
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover{
+      background-color: #29204F;
+    }
+    i{
+      color: white;
+      margin-left: 5px;
+    }
+  }
+  &__dropdown{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: $blue;
+    border: none;
+    &-active{
+      display: block;
+    }
+    &-item{
+      height: 37px;
+      display: flex;
+      align-items: center;
+    }
+    &-link{
+      color: #fff;
+      line-height: 23px;
+      padding: 9px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      white-space: nowrap;
+      &:hover{
+        background-color: #29204F;
+      }
+    }
+  }
+}
