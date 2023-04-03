@@ -48,7 +48,6 @@ burger.addEventListener('click', () => {
 
     if (navbarStatus) {
         navbar.classList.add('header__nav-active')
-        navbar.removeAttribute('style')
     } else {
         navbar.classList.remove('header__nav-active')
     }
