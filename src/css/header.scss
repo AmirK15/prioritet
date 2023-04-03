@@ -1,5 +1,6 @@
 .header{
   &__top{
+    position: relative;
     padding: 5px 0;
     display: flex;
     align-items: center;
@@ -55,13 +56,19 @@
     }
   }
   &__nav{
+    width: 100%;
     background-color: $blue;
+    &-fixed{
+      position: fixed;
+      top: 0;
+    }
   }
   &__list{
     height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__item{
     position: relative;
@@ -106,6 +113,7 @@
       align-items: center;
     }
     &-link{
+      width: 100%;
       color: #fff;
       line-height: 23px;
       padding: 9px 15px;
@@ -115,6 +123,119 @@
       white-space: nowrap;
       &:hover{
         background-color: #29204F;
+      }
+    }
+  }
+  &__burger{
+    display: none;
+  }
+}
+
+@media (max-width: 963px) {
+  .header{
+    &__nav{
+      height: 92px;
+    }
+    &__list{
+      max-width: 83%;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 818px) {
+  .header__list{
+    max-width: 98%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header{
+    background-color: #fff;
+    width: 100%;
+    &.fixed {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+    }
+    &__top{
+      height: 100px;
+    }
+    &__right{
+      display: none;
+    }
+    &__dropdown{
+      position: static;
+      box-shadow: 0 0 0;
+      margin: 0 0 10px 5px;
+    }
+    &__item{
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__link{
+      padding: 0 0 10px 0;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    &__nav{
+      padding: 0;
+      height: 0;
+      &-active{
+        padding: 20px 0 5px 0;
+        height: 315px;
+        .header__list{
+          display: flex;
+        }
+      }
+    }
+    &__list{
+      display: none;
+      overflow-y: auto;
+      height: 290px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      row-gap: 10px;
+    }
+    &__burger{
+      cursor: pointer;
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      transform: rotate(180deg);
+      &-line{
+        width: 85%;
+        height: 3px;
+        background: $blue;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        position: absolute;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 70%;
+          height: 3px;
+          background: $blue;
+          left: 0;
+          top: -10px;
+          transition: .3s;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 3px;
+          background: $blue;
+          left: 0;
+          top: 10px;
+          transition: .3s;
+        }
       }
     }
   }
