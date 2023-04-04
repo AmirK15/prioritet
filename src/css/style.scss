@@ -19,8 +19,8 @@ body{
   font-weight: 400;
 }
 
-section{
-  background-color: #7e7e7e;
+.section{
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -31,3 +31,4 @@ section{
 }
 
 @import "header";
+@import "slider";
