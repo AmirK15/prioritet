@@ -194,6 +194,7 @@
         height: 315px;
         .header__list{
           display: flex;
+          flex-wrap: nowrap;
         }
       }
     }

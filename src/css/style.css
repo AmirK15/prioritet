@@ -18,11 +18,6 @@ body {
   font-weight: 400;
 }
 
-.section {
-  background-color: #fff;
-  height: 100vh;
-}
-
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -269,6 +264,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .header__list {
     display: none;
@@ -330,8 +327,33 @@ body {
   }
 }
 .slider .mySwiper {
-  max-height: 500px;
+  height: 500px;
 }
 .slider .swiper-slide img {
+  height: 100%;
   width: 100%;
+}
+.slider .swiper-button-next, .slider .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+}
+.slider .swiper-button-next svg path, .slider .swiper-button-prev svg path {
+  stroke-opacity: 1;
+  stroke: #fff;
+  opacity: 0.8;
+}
+.slider .swiper-button-next:after, .slider .swiper-button-prev:after {
+  content: "";
+}
+.slider .swiper-button-prev.swiper-button-disabled svg path {
+  stroke-opacity: 0.7;
+}
+.slider .swiper-button-next.swiper-button-disabled svg path {
+  stroke-opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .slider .mySwiper {
+    height: 320px;
+  }
 }
