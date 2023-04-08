@@ -85,3 +85,13 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     }
 });
+
+
+const swiperPartners = new Swiper(".partners__slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

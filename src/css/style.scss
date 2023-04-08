@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-$blue: #654FA1;
+$blue: #019cc4;
 
 *{
   padding: 0;
@@ -25,5 +25,30 @@ body{
   padding: 0 15px;
 }
 
+.title{
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 30px;
+  color: $blue;
+  margin-bottom: 60px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  &:after {
+    background-color: $blue;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 14px auto 0;
+    width: 80px;
+  }
+}
+
 @import "header";
 @import "slider";
+@import "welcome";
+@import "advantage";
+@import "statistic";
+@import "team";
+@import "partners";
+@import "footer";

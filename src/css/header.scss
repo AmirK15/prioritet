@@ -1,7 +1,7 @@
 .header{
   &__top{
     position: relative;
-    padding: 5px 0;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,12 +19,18 @@
         border-radius: 50%;
         text-align: center;
         color: #fff;
-        background: #443676;
+        background: $blue;
         transition: background 0.2s, color 0.2s;
         &:hover{
-          background: #a39ac7;
+          background: #146e86;
         }
       }
+    }
+  }
+  &__logo{
+    img{
+      width: 110px;
+      vertical-align: middle;
     }
   }
   &__right{
@@ -39,6 +45,9 @@
     i {
       color: $blue;
       font-size: 18px;
+    }
+    &-number{
+      font-size: 14px !important;
     }
     &-text{
       p{
@@ -85,7 +94,7 @@
     text-transform: uppercase;
     font-weight: 500;
     &:hover{
-      background-color: #29204F;
+      background-color: #146e86;
     }
     i{
       color: white;
@@ -124,7 +133,7 @@
       font-weight: 500;
       white-space: nowrap;
       &:hover{
-        background-color: #29204F;
+        background-color: #146e86;
       }
     }
   }
@@ -133,19 +142,19 @@
   }
 }
 
-@media (max-width: 963px) {
+@media (max-width: 1150px) {
   .header{
     &__nav{
       height: 92px;
     }
     &__list{
-      max-width: 83%;
+      max-width: 80%;
       justify-content: flex-start;
     }
   }
 }
 
-@media (max-width: 818px) {
+@media (max-width: 850px) {
   .header__list{
     max-width: 98%;
   }
@@ -162,7 +171,12 @@
       z-index: 99;
     }
     &__top{
-      height: 100px;
+      height: 110px;
+    }
+    &__logo{
+      img{
+        width: 90px;
+      }
     }
     &__right{
       display: none;
