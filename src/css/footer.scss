@@ -1,6 +1,10 @@
 .footer{
   padding: 50px 0 80px;
   background: #262934;
+  &__content{
+    display: flex;
+    column-gap: 70px;
+  }
   &__title{
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
@@ -20,6 +24,14 @@
     }
   }
   &__item{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    font-size: 14px;
+    color: white;
     display: flex;
     align-items: center;
     column-gap: 15px;
@@ -27,9 +39,5 @@
       font-size: 18px;
       color: white;
     }
-  }
-  &__link{
-    font-size: 14px;
-    color: white;
   }
 }
