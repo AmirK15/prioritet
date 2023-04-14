@@ -119,7 +119,7 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-.header__info-text a {
+.header__info-text span {
   color: #666;
   font-size: 13px;
   font-weight: 400;
