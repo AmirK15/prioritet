@@ -56,14 +56,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header__top-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 7px;
-     -moz-column-gap: 7px;
-          column-gap: 7px;
-}
 .header__top-link i {
   font-size: 16px;
   width: 30px;
@@ -224,6 +216,7 @@ body {
     height: 92px;
   }
   .header__list {
+    margin: 0 auto;
     max-width: 80%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
