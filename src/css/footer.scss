@@ -1,6 +1,11 @@
 .footer{
-  padding: 50px 0 80px;
+  padding: 50px 0;
   background: #262934;
+  &__logo{
+    width: 125px;
+    height: 125px;
+    align-self: center;
+  }
   &__content{
     display: flex;
     column-gap: 70px;

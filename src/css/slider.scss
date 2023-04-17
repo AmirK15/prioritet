@@ -2,9 +2,13 @@
   .mySwiper{
     height: 500px;
   }
-  .swiper-slide img{
-    height: 100%;
-    width: 100%;
+  .swiper-slide{
+    display: flex;
+    align-items: center;
+    img{
+      height: auto;
+      width: 100%;
+    }
   }
   .swiper-button-next, .swiper-button-prev{
     width: 48px;
@@ -39,7 +43,15 @@
 @media (max-width: 767px) {
   .slider{
     .mySwiper{
-      height: 320px;
+      height: 200px;
+    }
+  }
+  .swiper-slide:nth-child(2) img{
+    align-self: flex-start;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    svg{
+      width: 35px;
     }
   }
 }

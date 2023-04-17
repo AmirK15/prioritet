@@ -27,8 +27,7 @@
     font-size: 15px;
   }
   &__image{
-    height: 370px;
-    width: 370px;
+    width: 330px;
   }
 }
 
@@ -37,7 +36,6 @@
     &__image{
       display: none;
     }
-
   }
 }
 
@@ -48,9 +46,25 @@
     }
     &__image{
       display: inline-block;
-      width: 100%;
+      width: 70%;
       height: auto;
-      margin-top: 30px;
+      margin: 30px auto 0;
+    }
+  }
+}
+
+@media (max-width: 545px) {
+  .welcome {
+    &__title {
+      font-size: 33px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome{
+    &__image{
+      width: 85%;
     }
   }
 }

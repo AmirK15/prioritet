@@ -19,9 +19,9 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .title {
@@ -136,9 +136,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -351,8 +348,16 @@ body {
 .slider .mySwiper {
   height: 500px;
 }
+.slider .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .slider .swiper-slide img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 .slider .swiper-button-next, .slider .swiper-button-prev {
@@ -376,7 +381,14 @@ body {
 
 @media (max-width: 767px) {
   .slider .mySwiper {
-    height: 320px;
+    height: 200px;
+  }
+  .swiper-slide:nth-child(2) img {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .swiper-button-next svg, .swiper-button-prev svg {
+    width: 35px;
   }
 }
 .welcome {
@@ -413,8 +425,7 @@ body {
   font-size: 15px;
 }
 .welcome__image {
-  height: 370px;
-  width: 370px;
+  width: 330px;
 }
 
 @media (max-width: 991px) {
@@ -431,10 +442,23 @@ body {
   }
   .welcome__image {
     display: inline-block;
-    width: 100%;
+    width: 70%;
     height: auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
   }
+}
+@media (max-width: 545px) {
+  .welcome__title {
+    font-size: 33px;
+  }
+}
+@media (max-width: 450px) {
+  .welcome__image {
+    width: 85%;
+  }
+}
+.partners {
+  padding-bottom: 50px;
 }
 .partners__slider {
   padding-bottom: 30px;
@@ -455,8 +479,15 @@ body {
 }
 
 .footer {
-  padding: 50px 0 80px;
+  padding: 50px 0;
   background: #262934;
+}
+.footer__logo {
+  width: 125px;
+  height: 125px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .footer__content {
   display: -webkit-box;
