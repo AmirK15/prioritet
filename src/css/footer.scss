@@ -8,7 +8,7 @@
   }
   &__content{
     display: flex;
-    column-gap: 70px;
+    justify-content: space-between;
   }
   &__title{
     border-bottom: 1px solid #ccc;
@@ -43,6 +43,17 @@
     i {
       font-size: 18px;
       color: white;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .footer{
+    &__content{
+      display: grid;
+      grid-template-columns: 0.7fr;
+      justify-content: center;
+      row-gap: 40px;
     }
   }
 }

@@ -10,13 +10,15 @@
       width: 100%;
     }
   }
+  .swiper-slide:nth-child(3) img{
+    align-self: flex-start;
+  }
   .swiper-button-next, .swiper-button-prev{
     width: 48px;
     height: 48px;
     svg{
       path{
         stroke-opacity: 1;
-        stroke: #fff;
         opacity: 0.8;
       }
     }
@@ -45,9 +47,6 @@
     .mySwiper{
       height: 200px;
     }
-  }
-  .swiper-slide:nth-child(2) img{
-    align-self: flex-start;
   }
   .swiper-button-next, .swiper-button-prev{
     svg{
