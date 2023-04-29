@@ -1,0 +1,35 @@
+.testimony{
+  padding: 70px 0;
+  &__content{
+    margin: 0 auto;
+    width: 45%;
+    & img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .testimony{
+    &__content{
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .testimony{
+    &__content{
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .testimony{
+    &__content{
+      width: 75%;
+    }
+  }
+}
