@@ -1,0 +1,13 @@
+.history{
+  padding: 70px 0;
+  &__table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    td{
+        border-bottom: 1px solid #7e7e7e;
+      &:first-child{
+        color: $blue;
+      }
+    }
+  }
+}

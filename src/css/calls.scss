@@ -1,3 +1,22 @@
 .calls{
-
+  padding: 70px 0;
+  &__table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    td{
+      font-size: 17px;
+      font-weight: 600;
+      width: 250px;
+      height: 55px;
+      text-align: center;
+      padding: 10px 0;
+      border: 1px solid #7d7d7d;
+    }
+    &-title{
+      margin-bottom: 30px;
+      font-size: 22px;
+      color: $blue;
+      font-weight: 600;
+    }
+  }
 }
