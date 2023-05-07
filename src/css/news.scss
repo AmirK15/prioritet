@@ -1,0 +1,16 @@
+.news{
+  padding: 70px 0;
+  img{
+    width: 100%;
+  }
+  .swiper-slide{
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

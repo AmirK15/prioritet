@@ -1,13 +1,16 @@
 .history{
   padding: 70px 0;
-  &__table{
-    border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__content{
     margin: 0 auto;
-    td{
-        border-bottom: 1px solid #7e7e7e;
-      &:first-child{
-        color: $blue;
-      }
-    }
+  }
+  &__text{
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  &__year{
+    color: $blue;
   }
 }

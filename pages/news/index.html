@@ -8,6 +8,7 @@
     <!--    <meta property="og:title" content="">-->
     <!--    <meta property="og:description" content="">-->
     <link rel="icon" href="../../src/images/icons/prioritet.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../src/css/style.css">
     <title>Prioritet</title>
@@ -61,7 +62,7 @@
                             <a class="header__dropdown-link" href="../testimony/index.html">Свидетельство</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="#">История</a>
+                            <a class="header__dropdown-link" href="../history/index.html">История</a>
                         </li>
                         <li class="header__dropdown-item">
                             <a class="header__dropdown-link" href="">Становление</a>
@@ -101,7 +102,7 @@
                             <a class="header__dropdown-link" href="">Информация для родителей</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="../internal/index.html">Внутренний распорядок</a>
+                            <a class="header__dropdown-link" href="#">Внутренний распорядок</a>
                         </li>
                     </ul>
                 </li>
@@ -130,13 +131,53 @@
     </nav>
 </header>
 <main>
-    <section class="history">
-        <div class="history__content">
-            <p class="history__text"><span class="history__year">2014</span> - Открытие школы "Приоритет"</p>
-            <p class="history__text"><span class="history__year">2018</span> - Открытие детского садика</p>
-            <p class="history__text"><span class="history__year">2018</span> - Школа получает статус УВК "Приоритет"</p>
-            <p class="history__text"><span class="history__year">2021</span> - Открытие второго филиала УВК "Приоритет"</p>
-            <p class="history__text"><span class="history__year">2022</span> - Открытие детского образовательного центра "Clever Prioritet"</p>
+    <section class="news">
+        <div class="container">
+            <p class="news__title">День открытых дверей в театре Оперы и Балета <br> 14.04.2023</p>
+        </div>
+        <div class="swiper news__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera1.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera2.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera3.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera4.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera5.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera6.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera7.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera8.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../src/images/news/opera9.jpg" alt="День открытых дверей в театре Оперы и Балета">
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 36L30 24L18 12" stroke="#fff" stroke-width="10" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 36L18 24L30 12" stroke="white" stroke-width="10" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 </main>

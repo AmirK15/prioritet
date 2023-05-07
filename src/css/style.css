@@ -43,6 +43,26 @@ body {
   width: 80px;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+}
+.swiper-button-next svg path, .swiper-button-prev svg path {
+  stroke-opacity: 1;
+  opacity: 0.8;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-prev.swiper-button-disabled svg path {
+  stroke-opacity: 0.7;
+}
+
+.swiper-button-next.swiper-button-disabled svg path {
+  stroke-opacity: 0.7;
+}
+
 .header__top {
   position: relative;
   padding: 10px 0;
@@ -365,23 +385,6 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-.slider .swiper-button-next, .slider .swiper-button-prev {
-  width: 48px;
-  height: 48px;
-}
-.slider .swiper-button-next svg path, .slider .swiper-button-prev svg path {
-  stroke-opacity: 1;
-  opacity: 0.8;
-}
-.slider .swiper-button-next:after, .slider .swiper-button-prev:after {
-  content: "";
-}
-.slider .swiper-button-prev.swiper-button-disabled svg path {
-  stroke-opacity: 0.7;
-}
-.slider .swiper-button-next.swiper-button-disabled svg path {
-  stroke-opacity: 0.7;
-}
 
 @media (max-width: 767px) {
   .slider .mySwiper {
@@ -530,16 +533,47 @@ body {
 }
 .history {
   padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.history__table {
-  border-collapse: collapse;
+.history__content {
   margin: 0 auto;
 }
-.history__table td {
-  border-bottom: 1px solid #7e7e7e;
+.history__text {
+  font-size: 17px;
+  margin-bottom: 5px;
 }
-.history__table td:first-child {
+.history__year {
   color: #019cc4;
+}
+
+.news {
+  padding: 70px 0;
+}
+.news img {
+  width: 100%;
+}
+.news .swiper-slide {
+  max-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.news__title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .footer {
