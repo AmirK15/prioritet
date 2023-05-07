@@ -75,7 +75,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-// SWIPER
+// SWIPERs
 
 const swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -90,7 +90,6 @@ const swiper = new Swiper(".mySwiper", {
     }
 });
 
-
 const swiperPartners = new Swiper(".partners__slider", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -98,4 +97,19 @@ const swiperPartners = new Swiper(".partners__slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
+});
+
+const swiperNews = new Swiper(".news__slider", {
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    }
 });
