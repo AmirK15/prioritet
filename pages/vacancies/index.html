@@ -8,10 +8,19 @@
     <!--    <meta property="og:title" content="">-->
     <!--    <meta property="og:description" content="">-->
     <link rel="icon" href="../../src/images/icons/prioritet.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../src/css/style.css">
     <title>Prioritet</title>
+    <style>
+        .vacancies{
+            padding: 70px 0;
+        }
+        .vacancies__text{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 <header class="header">
@@ -112,12 +121,12 @@
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="../news/index.html" class="header__link">
                         Новости
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="../vacancies/index.html" class="header__link">
+                    <a href="#" class="header__link">
                         Вакансии
                     </a>
                 </li>
@@ -131,53 +140,21 @@
     </nav>
 </header>
 <main>
-    <section class="news">
+    <section class="vacancies">
         <div class="container">
-            <p class="news__title">День открытых дверей в театре Оперы и Балета <br> 14.04.2023</p>
-        </div>
-        <div class="swiper news__slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera1.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera2.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera3.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera4.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera5.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera6.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera7.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera8.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera9.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
+            <div class="vacancies__content">
+                <h2 class="title">
+                    Открытые вакансии
+                </h2>
+                <ul class="vacancies__content">
+                    <li class="vacancies__text">
+                        Зав.хоз гибкий график психолог гибкий график
+                    </li>
+                    <li class="vacancies__text">
+                        На будущий учебный год требуются Помощники куратора с 13:00-18:00
+                    </li>
+                </ul>
             </div>
-            <div class="swiper-button-next">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 36L30 24L18 12" stroke="#fff" stroke-width="10" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="swiper-button-prev">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 36L18 24L30 12" stroke="white" stroke-width="10" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
 </main>
@@ -209,8 +186,7 @@
                 </h4>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a target="_blank" href="https://www.instagram.com/prioritet.shkola.kg/?igshid=YmMyMTA2M2Y%3D"
-                           class="footer__link">
+                        <a target="_blank" href="https://www.instagram.com/prioritet.shkola.kg/?igshid=YmMyMTA2M2Y%3D" class="footer__link">
                             <i class="fa fa-instagram"></i>
                             Instagram
                         </a>
@@ -222,8 +198,7 @@
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a target="_blank" href="https://www.facebook.com/prioritet.shkola.kg?mibextid=ZbWKwL"
-                           class="footer__link">
+                        <a target="_blank" href="https://www.facebook.com/prioritet.shkola.kg?mibextid=ZbWKwL" class="footer__link">
                             <i class="fa fa-facebook"></i>
                             FaceBook
                         </a>
@@ -252,8 +227,6 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="../../src/js/swiper.js"></script>
 <script src="../../src/js/main.js"></script>
 </body>
 </html>

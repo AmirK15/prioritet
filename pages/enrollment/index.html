@@ -8,10 +8,38 @@
     <!--    <meta property="og:title" content="">-->
     <!--    <meta property="og:description" content="">-->
     <link rel="icon" href="../../src/images/icons/prioritet.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../src/css/style.css">
     <title>Prioritet</title>
+    <style>
+        .enrollment {
+            padding: 70px 0
+        }
+        .enrollment .title {
+            margin-bottom: 40px;
+        }
+        .enrollment__text{
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+        .enrollment__list{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .enrollment__item {
+            list-style: decimal inside;
+            font-size: 17px;
+        }
+        .enrollment__item:first-child {
+            list-style: none;
+            list-style-position: inside;
+        }
+        .enrollment__content {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
 <header class="header">
@@ -107,12 +135,12 @@
                     </ul>
                 </li>
                 <li class="header__item">
-                    <a href="../enrollment/index.html" class="header__link">
+                    <a href="#" class="header__link">
                         Поступление
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="../news/index.html" class="header__link">
                         Новости
                     </a>
                 </li>
@@ -131,53 +159,56 @@
     </nav>
 </header>
 <main>
-    <section class="news">
+    <section class="enrollment">
         <div class="container">
-            <p class="news__title">День открытых дверей в театре Оперы и Балета <br> 14.04.2023</p>
-        </div>
-        <div class="swiper news__slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera1.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera2.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera3.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera4.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera5.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera6.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera7.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera8.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../src/images/news/opera9.jpg" alt="День открытых дверей в театре Оперы и Балета">
-                </div>
+            <h2 class="title">
+                Процесс поступления
+            </h2>
+            <p class="enrollment__text">
+                Для знакомства с УВК «Приоритет» мы приглашаем родителей и детей посетить нашу школу для ознакомления и пройти тестирование. Чтобы записаться, позвоните нам или напишите на What’s app
+            </p>
+            <h2 class="title">
+                Тестирование
+            </h2>
+            <p class="enrollment__text">
+                Перед поступлением в школу, дети сдают тестирование по двум критериям: академические знания и психоэмоциональное состояние.
+                Этот процесс поможет нам определить уровень ребенка и определить в нужный класс
+            </p>
+            <h2 class="title">
+                Документы
+            </h2>
+            <div class="enrollment__content">
+                <ol class="enrollment__list">
+                    <li class="enrollment__item">
+                        Список необходимых документов и справок:
+                    </li>
+                    <li value="1" class="enrollment__item">
+                        Медицинская форма 063, 026 (оригиналы).
+                    </li>
+                    <li class="enrollment__item">
+                        Копию паспорта родителя, который заключает договор со школой.
+                    </li>
+                    <li class="enrollment__item">
+                        Справку с места работы родителя, который подписывает договор со школой.
+                    </li>
+                    <li class="enrollment__item">
+                        Копию свидетельства о рождении ребёнка.
+                    </li>
+                    <li class="enrollment__item">
+                        Справка с места жительства ребёнка и родителя.
+                    </li>
+                    <li class="enrollment__item">
+                        Дело № (для 1 класса формат А5)
+                    </li>
+                    <li class="enrollment__item">
+                        Фото размер 3/4 (4 шт)
+                    </li>
+                    <li class="enrollment__item">
+                        Справка - ПИН (персональный номер ребёнка)
+                        (ксерокопия)
+                    </li>
+                </ol>
             </div>
-            <div class="swiper-button-next">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 36L30 24L18 12" stroke="#fff" stroke-width="10" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="swiper-button-prev">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 36L18 24L30 12" stroke="white" stroke-width="10" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
 </main>
@@ -209,8 +240,7 @@
                 </h4>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a target="_blank" href="https://www.instagram.com/prioritet.shkola.kg/?igshid=YmMyMTA2M2Y%3D"
-                           class="footer__link">
+                        <a target="_blank" href="https://www.instagram.com/prioritet.shkola.kg/?igshid=YmMyMTA2M2Y%3D" class="footer__link">
                             <i class="fa fa-instagram"></i>
                             Instagram
                         </a>
@@ -222,8 +252,7 @@
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a target="_blank" href="https://www.facebook.com/prioritet.shkola.kg?mibextid=ZbWKwL"
-                           class="footer__link">
+                        <a target="_blank" href="https://www.facebook.com/prioritet.shkola.kg?mibextid=ZbWKwL" class="footer__link">
                             <i class="fa fa-facebook"></i>
                             FaceBook
                         </a>
@@ -252,8 +281,6 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="../../src/js/swiper.js"></script>
 <script src="../../src/js/main.js"></script>
 </body>
 </html>
