@@ -73,3 +73,18 @@ window.addEventListener('scroll', () => {
         header.classList.remove('fixed');
     }
 });
+
+
+// gallery Function
+
+function showGallery(arr, elem) {
+    arr.forEach(item => {
+        elem.innerHTML += `
+        <div class="achievement__content">
+            <a href="${item}" data-fancybox="gallery">
+                <img class="achievement__image" src="${item}">
+            </a>
+        </div>
+    `
+    })
+}
