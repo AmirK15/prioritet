@@ -75,41 +75,16 @@ window.addEventListener('scroll', () => {
 });
 
 
-// SWIPERs
+// gallery Function
 
-const swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    effect: "fade",
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-    }
-});
-
-const swiperPartners = new Swiper(".partners__slider", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-const swiperNews = new Swiper(".news__slider", {
-    pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-    }
-});
+function showGallery(arr, elem) {
+    arr.forEach(item => {
+        elem.innerHTML += `
+        <div class="achievement__content">
+            <a href="${item}" data-fancybox="gallery">
+                <img class="achievement__image" src="${item}">
+            </a>
+        </div>
+    `
+    })
+}

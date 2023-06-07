@@ -1,0 +1,27 @@
+.enrollment {
+  padding: 70px 0;
+  .title {
+    margin-bottom: 40px;
+  }
+  &__text{
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &__item {
+    list-style: decimal inside;
+    font-size: 17px;
+  }
+  &__item:first-child {
+    list-style: none;
+    list-style-position: inside;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+}

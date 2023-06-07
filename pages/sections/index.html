@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../src/css/style.css">
     <title>Prioritet</title>
+    <style>
+        .calls__table-first{
+            margin-bottom: 50px;
+        }
+        @media (max-width: 555px) {
+            .calls__table td{
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        @media (max-width: 375px) {
+            .calls__table td{
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="header">
@@ -55,7 +71,7 @@
                     </a>
                     <ul class="header__dropdown">
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Лицензия</a>
+                            <a class="header__dropdown-link" href="../license/index.html">Лицензия</a>
                         </li>
                         <li class="header__dropdown-item">
                             <a class="header__dropdown-link" href="../testimony/index.html">Свидетельство</a>
@@ -64,16 +80,13 @@
                             <a class="header__dropdown-link" href="../history/index.html">История</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Становление</a>
+                            <a class="header__dropdown-link" href="../ourday/index.html">Наши будни</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Достижения</a>
+                            <a class="header__dropdown-link" href="../achievement/index.html">Достижения</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Олимпиады</a>
-                        </li>
-                        <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Сертификаты</a>
+                            <a class="header__dropdown-link" href="../certificates/index.html">Сертификаты</a>
                         </li>
                     </ul>
                 </li>
@@ -84,10 +97,7 @@
                     </a>
                     <ul class="header__dropdown">
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Внутренний распорядок</a>
-                        </li>
-                        <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="../sections/index.html">Кружки, секции</a>
+                            <a class="header__dropdown-link" href="#">Кружки, секции</a>
                         </li>
                     </ul>
                 </li>
@@ -98,15 +108,12 @@
                     </a>
                     <ul class="header__dropdown">
                         <li class="header__dropdown-item">
-                            <a class="header__dropdown-link" href="">Информация для родителей</a>
-                        </li>
-                        <li class="header__dropdown-item">
                             <a class="header__dropdown-link" href="../internal/index.html">Внутренний распорядок</a>
                         </li>
                     </ul>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="../enrollment/index.html" class="header__link">
                         Поступление
                     </a>
                 </li>
@@ -116,12 +123,12 @@
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="../vacancies/index.html" class="header__link">
                         Вакансии
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="" class="header__link">
+                    <a href="../accreditation/index.html" class="header__link">
                         Аккредитация
                     </a>
                 </li>
@@ -131,84 +138,84 @@
 </header>
 <main>
     <section class="calls">
-        <div class="container">
+        <div style="padding: 0 10px" class="container">
             <h2 class="title">
                 Расписание платных activities и секций. <br>
                 Главный корпус: Пр. Ч.Айтматова 56
             </h2>
-            <table class="calls__table">
-                <tbody class="calls__table-content">
-                <tr class="calls__table-row">
-                    <td class="calls__table">№</td>
-                    <td class="calls__table">Наименование</td>
-                    <td class="calls__table">Пон-ник</td>
-                    <td class="calls__table">Вторник</td>
-                    <td class="calls__table">Среда</td>
-                    <td class="calls__table">Четверг</td>
+            <table class="calls__table calls__table-first">
+                <tbody>
+                <tr>
+                    <td>№</td>
+                    <td>Наименование</td>
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">1</td>
-                    <td class="calls__table">Хореография Группа "Наристе"</td>
-                    <td class="calls__table">14:30-15:30</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">14:30-15:30</td>
-                    <td class="calls__table"></td>
+                <tr>
+                    <td>1</td>
+                    <td>Хореография Группа "Наристе"</td>
+                    <td>14:30-15:30</td>
+                    <td></td>
+                    <td>14:30-15:30</td>
+                    <td></td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">2</td>
-                    <td class="calls__table">Таэкван-До</td>
-                    <td class="calls__table">16:00-17:00</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">16.00-17.00</td>
-                    <td class="calls__table"></td>
+                <tr>
+                    <td>2</td>
+                    <td>Таэкван-До</td>
+                    <td>16:00-17:00</td>
+                    <td></td>
+                    <td>16:00-17:00</td>
+                    <td></td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">3</td>
-                    <td class="calls__table">Шахматы</td>
-                    <td class="calls__table">14:00-15:00</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">15:00-16:00</td>
-                    <td class="calls__table"></td>
+                <tr>
+                    <td>3</td>
+                    <td>Шахматы</td>
+                    <td>14:00-15:00</td>
+                    <td></td>
+                    <td>15:00-16:00</td>
+                    <td></td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">4</td>
-                    <td class="calls__table">Айкидо</td>
-                    <td class="calls__table">17:00-18:00</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">17:00-18:00</td>
-                    <td class="calls__table"></td>
+                <tr>
+                    <td>4</td>
+                    <td>Айкидо</td>
+                    <td>17:00-18:00</td>
+                    <td></td>
+                    <td>17:00-18:00</td>
+                    <td></td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">5</td>
-                    <td class="calls__table">ИХТ</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">16:15-17:15</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">14:00-15:00</td>
+                <tr>
+                    <td>5</td>
+                    <td>ИХТ</td>
+                    <td></td>
+                    <td>16:15-17:15</td>
+                    <td></td>
+                    <td>14:00-15:00</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">6</td>
-                    <td class="calls__table">Английский язык</td>
-                    <td class="calls__table">14:00-14:40 <br> 1 груп. ( МК )</td>
-                    <td class="calls__table">14:00-14:40 <br>2 груп. ( МК )</td>
-                    <td class="calls__table">14:00-14:40 <br>1 груп. (МК ) </td>
-                    <td class="calls__table">14:00-14:40 <br>2 груп. ( АА )</td>
+                <tr>
+                    <td>6</td>
+                    <td>Английский язык</td>
+                    <td>14:00-14:40 <br>1 груп.(МК)</td>
+                    <td>14:00-14:40 <br>2 груп.(МК)</td>
+                    <td>14:00-14:40 <br>1 груп.(МК) </td>
+                    <td>14:00-14:40 <br>2 груп.(АА)</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">7</td>
-                    <td class="calls__table">Комуз</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">16:15-17:15</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">16:15-17:15</td>
+                <tr>
+                    <td>7</td>
+                    <td>Комуз</td>
+                    <td></td>
+                    <td>16:15-17:15</td>
+                    <td></td>
+                    <td>16:15-17:15</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">8</td>
-                    <td class="calls__table">15:00-16:00</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">15:00-16:00</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">15:00-16:00</td>
+                <tr>
+                    <td>8</td>
+                    <td>Укулеле</td>
+                    <td>15:00-16:00</td>
+                    <td></td>
+                    <td>15:00-16:00</td>
+                    <td></td>
                 </tr>
                 </tbody>
             </table>
@@ -216,54 +223,54 @@
                 Обязательные activities и секции.
             </h2>
             <table class="calls__table">
-                <tbody class="calls__table-content">
-                <tr class="calls__table-row">
-                    <td class="calls__table">№</td>
-                    <td class="calls__table">Наименование</td>
-                    <td class="calls__table">Пон-ник</td>
-                    <td class="calls__table">Вторник</td>
-                    <td class="calls__table">Среда</td>
-                    <td class="calls__table">Четверг</td>
+                <tbody>
+                <tr>
+                    <td>№</td>
+                    <td>Наименование</td>
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">1</td>
-                    <td class="calls__table">ЛФК(Лечебная Физическая культура)</td>
-                    <td class="calls__table">13:30-14:30</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">13:30-14:30</td>
-                    <td class="calls__table"></td>
+                <tr>
+                    <td>1</td>
+                    <td>ЛФК(Лечебная Физическая культура)</td>
+                    <td>13:30-14:30</td>
+                    <td></td>
+                    <td>13:30-14:30</td>
+                    <td></td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">2</td>
-                    <td class="calls__table">Таэкван-До 1-4 классы</td>
-                    <td class="calls__table">15:30-16:30</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">15.30-16.30</td>
-                    <td class="calls__table"></td>
+                <tr>
+                    <td>2</td>
+                    <td>Таэкван-До 1-4 классы</td>
+                    <td>15:30-16:30</td>
+                    <td></td>
+                    <td>15.30-16.30</td>
+                    <td></td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">3</td>
-                    <td class="calls__table">Творческая мастерская</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">14:00-14:40</td>
+                <tr>
+                    <td>3</td>
+                    <td>Творческая мастерская 1-2 классы</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>14:00-14:40</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">4</td>
-                    <td class="calls__table">Кулинария 1-2 классы</td>
-                    <td class="calls__table">14:30-15:00 (1 L , 1 E)</td>
-                    <td class="calls__table">14:30-15:00(2A)</td>
-                    <td class="calls__table">14:30-15:00 (1 C)</td>
-                    <td class="calls__table">14:30-15:00(2C,2 B)</td>
+                <tr>
+                    <td>4</td>
+                    <td>Кулинария 1-2 классы</td>
+                    <td>14:30-15:00 (1L, 1E)</td>
+                    <td>14:30-15:00 (2A)</td>
+                    <td>14:30-15:00 (1C)</td>
+                    <td>14:30-15:00(2C, 2B)</td>
                 </tr>
-                <tr class="calls__table-row">
-                    <td class="calls__table">5</td>
-                    <td class="calls__table">Хореография</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">14:00-14:30 1L-1E 14:30-15:00 1 C, 2 B , 2C 15:00-15:30 2 A, 3M.4M</td>
-                    <td class="calls__table"></td>
-                    <td class="calls__table">14:40-15:10 1L,1E 15:10-15:40 1C, 2B20 15:40-16:10 2A, 3M,4M</td>
+                <tr>
+                    <td>4</td>
+                    <td>Хореография</td>
+                    <td></td>
+                    <td>14:00-14:30 1L-1E 14:30-15:00 1C, 2B , 2C 15:00-15:30 2A, 3M, 4M</td>
+                    <td></td>
+                    <td>14:40-15:10 1L, 1E 15:10-15:40 1C, 2B, 2C 15:40-16:10 2A, 3M, 4M</td>
                 </tr>
                 </tbody>
             </table>

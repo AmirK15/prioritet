@@ -1,0 +1,34 @@
+.license{
+  padding: 70px 0;
+  &__content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__content img{
+    width: 30%;
+    border: 2px solid #7e7e7e;
+  }
+}
+
+@media (max-width: 911px) {
+  .license__content img{
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .license__content{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    img{
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .license__content img{
+    width: 70%;
+  }
+}
