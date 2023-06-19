@@ -1,7 +1,16 @@
 let ourdays_gallery = document.querySelector('.ourdays__gallery')
 
 const ourdaysImages = [
-    '../../src/images/outdays/days1.jpeg',
+    '../../src/images/outdays/achievement7.jpeg',
+    '../../src/images/outdays/achievement9.jpeg',
+    '../../src/images/outdays/achievement10.jpeg',
+    '../../src/images/outdays/achievement11.jpeg',
+    '../../src/images/outdays/achievement12.jpeg',
+    '../../src/images/outdays/achievement13.jpeg',
+    '../../src/images/outdays/achievement15.jpeg',
+    '../../src/images/outdays/achievement16.jpeg',
+    '../../src/images/outdays/achievement18.jpeg',
+    '../../src/images/outdays/achievement21.jpeg',
     '../../src/images/outdays/days2.jpeg',
     '../../src/images/outdays/days3.jpeg',
     '../../src/images/outdays/days4.jpeg',
