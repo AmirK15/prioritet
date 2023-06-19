@@ -1,8 +1,8 @@
 let achievement_gallery = document.querySelector('.achievement__gallery')
 
 const galleryImages = [
-    '../../src/images/outdays/days1.jpeg',
-    '../../src/images/outdays/days9.jpeg',
+    '../../src/images/achievement/days1.jpeg',
+    '../../src/images/achievement/days9.jpeg',
 
     '../../src/images/achievement/achievement1.jpeg',
     '../../src/images/achievement/achievement2.jpeg',
